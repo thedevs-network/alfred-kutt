@@ -8,7 +8,7 @@
 ## Requirements
 - [Alfred app](https://www.alfredapp.com)
 - [Alfred powerpack](https://www.alfredapp.com/powerpack/)
-- [Node.js](https://www.alfredapp.com/powerpack/)
+- [Node.js](https://nodejs.org/)
 
 ## Setup
 Login to [Kutt](https://kutt.it), go to settings and generate an API key.
