@@ -1,0 +1,28 @@
+{
+  "name": "alfred-kutt",
+  "version": "1.0.0",
+  "description": "Alfred workflow for Kutt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedevs-network/alfred-kutt.git"
+  },
+  "keywords": [
+    "alfred",
+    "alfred-workflow",
+    "kutt"
+  ],
+  "author": "poeti8",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thedevs-network/alfred-kutt/issues"
+  },
+  "homepage": "https://github.com/thedevs-network/alfred-kutt#readme",
+  "dependencies": {
+    "phin": "^3.4.0",
+    "run-node": "^1.0.0"
+  }
+}
