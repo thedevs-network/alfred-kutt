@@ -1,7 +1,7 @@
 # Alfred workflow for Kutt
 [Kutt](https://kutt.it) is a modern open source URL shortener. With this workflow, you can kutt your links shorter right from your Alfred app.
 
-**[Download](https://github.com/thedevs-network/alfred-kutt/releases)**
+**[Download](https://github.com/thedevs-network/alfred-kutt/releases/download/1.0.0/kutt.alfredworkflow)**
 
 ![Workflow Screenshot](screenshots/app.png)
 
