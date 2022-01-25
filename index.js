@@ -2,6 +2,7 @@ const p = require('phin');
 
 const target = process.argv[process.argv.length - 1];
 const key = process.env.API_KEY;
+const baseDomain = process.env.BASE_DOMAIN || "https://kutt.it";
 
 if (!key) {
   return console.log('Please set an API key first.');
@@ -17,7 +18,7 @@ function getErrorMessage(message) {
 (async function() {
   try {
     const { body = {} } = await p({
-      url: 'https://kutt.it/api/url/submit',
+      url: `${baseDomain}/api/url/submit`,
       method: 'POST',
       data: { target },
       core: {
