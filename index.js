@@ -1,6 +1,8 @@
 const p = require('phin');
 
 const target = process.argv[process.argv.length - 1];
+const domain = process.env.domain;
+
 const key = process.env.API_KEY;
 const baseDomain = process.env.BASE_DOMAIN || "https://kutt.it";
 
@@ -18,7 +20,7 @@ function getErrorMessage(message) {
 (async function() {
   try {
     const { body = {} } = await p({
-      url: `${baseDomain}/api/url/submit`,
+      url: `${baseDomain}/api/v2/links`,
       method: 'POST',
       data: { target },
       core: {
@@ -29,7 +31,7 @@ function getErrorMessage(message) {
       },
       parse: 'json'
     });
-    const message = body.shortUrl || getErrorMessage(body.error)
+    const message = body.link || getErrorMessage(body.error)
     console.log(message)
   } catch (error) {
     console.log(error.message);
